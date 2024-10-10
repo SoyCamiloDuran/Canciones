@@ -23,5 +23,10 @@
             </tr>
         </c:forEach>
     </table>
+    <div >
+		<form action="/canciones/formulario/agregar/{idCancion}" method="GET">
+			<button>Agregar Cancion</button>
+		</form>
+	</div>
 </body>
 </html>
