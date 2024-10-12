@@ -15,9 +15,14 @@
     <p>Género: ${cancion.genero}</p>
     <p>Idioma: ${cancion.idioma}</p>
     <a href="/canciones">Volver a lista de canciones</a>
+    
     <form action="/canciones/eliminar/${cancion.id}" method="POST">
     	<input type="hidden" name="_method" value="DELETE">
     	<button class="btn btn-danger">Eliminar Cancion</button>
+    </form>
+    
+    <form action="/canciones/formulario/editar/${cancion.id}" >
+    	<button class="btn btn-danger">Editar Cancion</button>
     </form>
 </body>
 </html>
