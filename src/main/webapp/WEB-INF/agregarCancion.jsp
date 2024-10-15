@@ -24,7 +24,9 @@
 					</div>
 					<div>
 						<form:label class="form-label" path="artista"> Artista: </form:label>
-						<form:input class="form-control" path="artista" />
+						<form:select path="artista.id">
+                			<form:options items="${artistas}" itemValue="id" itemLabel="nombre" />
+            			</form:select>
 						<form:errors class="alert alert-danger d-block" path="artista" /> 
 					</div>
 					<div>
